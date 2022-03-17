@@ -1,0 +1,36 @@
+http://localhost:9123/api/employee/department/HR
+POST
+payload
+{
+  "name": "Jay",
+  "email": "jay@gmail.com",
+  "salary": 50000,
+  "dob": "1990-03-15T03:01:37.566Z"
+}
+
+
+curl -X 'POST' \
+  'http://localhost:9123/api/employee/department/HR' \
+  -H 'accept: */*' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "name": "Jay",
+  "email": "jay@gmail.com",
+  "salary": 50000,
+  "dob": "1990-03-15T03:01:37.566Z"
+}'
+
+
+
+http://localhost:9123/api/employee/all
+
+curl -X 'POST' \
+  'http://localhost:9123/api/employee/department/HR' \
+  -H 'accept: */*' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "name": "Manendra",
+  "email": "manendra@gmail.com",
+  "salary": 40000,
+  "dob": "1992-03-15T03:01:37.566Z"
+}'
